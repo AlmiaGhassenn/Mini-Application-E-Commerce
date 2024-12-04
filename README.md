@@ -21,8 +21,8 @@ Before you start, ensure you have the following installed:
 
 1. **Clone the Repository**:
    bash
-   git clone <https://github.com/AlmiaGhassenn/EcommerceProject.git>
-   cd <EcommerceProject>
+   git clone <https://github.com/AlmiaGhassenn/Mini-Application-E-Commerce.git>
+   cd <Mini-Application-E-Commerce>
 
 2.**Create a Virtual Environment:**
 
@@ -58,15 +58,5 @@ Start the Frontend Development Server: Run the Vue.js application:
 npm run serve
 The frontend will be available at: http://localhost:8080/
 
-
----
-
-### How to Use:
-1. Open or create a file named `README.md` in the root directory of your project.
-2. Paste the above content into the file.
-3. Replace `<https://github.com/AlmiaGhassenn/EcommerceProject.git>` and `<EcommerceProject>` with your actual repository details.
-4. Save the file.
-
-Let me know if you need further help! 😊
 
 
