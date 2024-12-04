@@ -12,14 +12,15 @@ class ProductViewSet(viewsets.ModelViewSet):
     
     @action(detail=False, methods=['get'])
     def in_stock(self, request):
-        
+         # Retrieve the 'in_stock' query parameter from the request
         in_stock = request.query_params.get('in_stock', None)
         if in_stock == 'true':
-            
+         # Filter for products with stock greater than 0
             products = Product.objects.filter(stock__gt=0)
         else:
-            
+            # Retrieve all products if no filter is applied
             products = Product.objects.all()
-
+        # Serialize the product data
         serializer = self.get_serializer(products, many=True)
+        # Return the serialized data as a JSON response
         return Response(serializer.data)
